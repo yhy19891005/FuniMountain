@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+
+def config = rootProject.ext.androidConfig
+
+android {
+    compileSdkVersion config.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    api project(path: ':myutils')
+    api project(path: ':funi_okhttp')
+
+    implementation 'com.yanzhenjie:album:2.1.3'
+    implementation "com.github.bumptech.glide:glide:4.10.0"
+    implementation 'androidx.recyclerview:recyclerview:1.0.0-beta01'
+    implementation 'com.contrarywind:Android-PickerView:4.1.8'
+}

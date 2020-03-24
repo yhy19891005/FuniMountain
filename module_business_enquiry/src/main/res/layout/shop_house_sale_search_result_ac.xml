@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:paddingBottom="16dp">
+
+    <include
+        layout="@layout/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="36dp"
+                android:paddingRight="36dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:text="合同网签号"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_wqh"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                layout="@layout/line_layout" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="36dp"
+                android:paddingRight="36dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:text="网签时间"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_wqtime"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                layout="@layout/line_layout" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="36dp"
+                android:paddingRight="36dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:text="合同状态"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <include
+                layout="@layout/line_layout" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="36dp"
+                android:paddingRight="36dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:text="项目名称"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_project_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                layout="@layout/line_layout" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="36dp"
+                android:paddingRight="36dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:text="国有土地使用证"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_country_land_syz"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                layout="@layout/line_layout" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="36dp"
+                android:paddingRight="36dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:text="商品房预售许可证"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_yushou_xkz"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                layout="@layout/line_layout" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="36dp"
+                android:paddingRight="36dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:text="房屋出卖人(开发企业)名称"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_company_name"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                layout="@layout/line_layout" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="36dp"
+                android:paddingRight="36dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:text="房屋出卖人证件类型/证件号码"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/seller_id_number"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <include
+                layout="@layout/line_layout"/>
+
+            <LinearLayout
+                android:id="@+id/ll_hou_vos"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

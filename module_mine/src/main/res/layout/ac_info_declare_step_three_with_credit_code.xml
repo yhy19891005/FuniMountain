@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/step1_linearlayout_style">
+
+                <TextView
+                    style="@style/step1_textview_style"
+                    android:text="信用代码:"/>
+
+                <EditText
+                    android:id="@+id/et_social_credit_code"
+                    style="@style/step1_edittext_style"
+                    android:hint="请输入统一社会信用代码"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <LinearLayout
+                style="@style/step1_linearlayout_style">
+
+                <TextView
+                    style="@style/step1_textview_style"
+                    android:text="成立日期:"/>
+
+                <TextView
+                    android:id="@+id/tv_establishment"
+                    style="@style/step1_edittext_style"
+                    android:drawableRight="@drawable/calendar"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <LinearLayout
+                style="@style/step1_linearlayout_style">
+
+                <TextView
+                    style="@style/step1_textview_style"
+                    android:text="注册资本(万):"/>
+
+                <EditText
+                    android:id="@+id/et_registered_capital"
+                    style="@style/step1_edittext_style"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tv_capital_unit"
+                    style="@style/step1_edittext_style"
+                    android:layout_weight="1.4"
+                    android:drawableRight="@drawable/down"
+                    android:gravity="center_vertical"
+                    android:text="人民币"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <LinearLayout
+                style="@style/step1_linearlayout_style">
+
+                <TextView
+                    style="@style/step1_textview_style"
+                    android:text="法人代表:"/>
+
+                <EditText
+                    android:id="@+id/et_legal_representative"
+                    style="@style/step1_edittext_style"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <LinearLayout
+                style="@style/step1_linearlayout_style">
+
+                <TextView
+                    style="@style/step1_textview_style"
+                    android:text="法人证件号"/>
+
+                <TextView
+                    android:id="@+id/tv_certificate_type"
+                    style="@style/step1_edittext_style"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/down"
+                    android:gravity="center_vertical"
+                    android:text="身份证"/>
+
+                <EditText
+                    android:id="@+id/et_id_code"
+                    style="@style/step1_edittext_style"
+                    android:layout_weight="1.4"
+                    android:hint="请输入证件号码"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <LinearLayout
+                android:id="@+id/ll_broker"
+                android:visibility="gone"
+                style="@style/step1_linearlayout_style">
+
+                <TextView
+                    style="@style/step1_textview_style"
+                    android:text="业务类型"/>
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:text="居间"
+                    android:textSize="12sp"
+                    android:checked="true"
+                    android:textColor="@color/black"
+                    style="@style/CustomCheckBoxTheme"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:text="代理"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    style="@style/CustomCheckBoxTheme"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                android:visibility="gone"
+                android:id="@+id/divider_broker"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <LinearLayout
+                android:id="@+id/ll_legal_code"
+                style="@style/step1_linearlayout_style">
+
+                <TextView
+                    style="@style/step1_textview_style"
+                    android:text="法人代码:"/>
+
+                <EditText
+                    android:id="@+id/et_legal_code"
+                    style="@style/step1_edittext_style"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider_legal_code"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <LinearLayout
+                android:id="@+id/ll_contact_address"
+                style="@style/step1_linearlayout_style">
+
+                <TextView
+                    style="@style/step1_textview_style"
+                    android:text="联系地址:"/>
+
+                <EditText
+                    android:id="@+id/et_contact_address"
+                    style="@style/step1_edittext_style"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider_contact_address"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <LinearLayout
+                style="@style/step1_linearlayout_style"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp">
+
+                <TextView
+                    style="@style/step1_textview_style"
+                    android:text="注册地址:"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="2.5">
+
+                    <LinearLayout
+                        android:id="@+id/ll1"
+                        style="@style/step1_linearlayout_style"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="0dp">
+
+                        <TextView
+                            android:hint="省"
+                            android:id="@+id/tv_regist_province"
+                            style="@style/step1_edittext_style"
+                            android:layout_weight="1"
+                            android:drawableRight="@drawable/down"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:hint="市"
+                            android:id="@+id/tv_regist_city"
+                            style="@style/step1_edittext_style"
+                            android:layout_weight="1"
+                            android:drawableRight="@drawable/down"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:hint="区/县"
+                            android:id="@+id/tv_regist_region"
+                            style="@style/step1_edittext_style"
+                            android:layout_weight="1"
+                            android:drawableRight="@drawable/down"
+                            android:gravity="center_vertical"/>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/et_regist_detail_address"
+                        style="@style/step1_edittext_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/ll1"
+                        android:gravity="center_vertical"
+                        android:hint="请输入详细注册地址"/>
+
+                    <LinearLayout
+                        style="@style/step1_linearlayout_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/et_regist_detail_address"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:paddingRight="0dp">
+
+                        <TextView
+                            style="@style/step1_textview_style"
+                            android:text="邮编:"/>
+
+                        <EditText
+                            android:id="@+id/et_regist_zip_code"
+                            style="@style/step1_edittext_style"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <LinearLayout
+                style="@style/step1_linearlayout_style"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp">
+
+                <TextView
+                    android:id="@+id/tv_office_address"
+                    style="@style/step1_textview_style"
+                    android:text="经营地址:"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="2.5">
+
+                    <LinearLayout
+                        android:id="@+id/ll2"
+                        style="@style/step1_linearlayout_style"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="0dp">
+
+                        <TextView
+                            android:hint="省"
+                            android:id="@+id/tv_business_province"
+                            style="@style/step1_edittext_style"
+                            android:layout_weight="1"
+                            android:drawableRight="@drawable/down"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:hint="市"
+                            android:id="@+id/tv_business_city"
+                            style="@style/step1_edittext_style"
+                            android:layout_weight="1"
+                            android:drawableRight="@drawable/down"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:hint="区/县"
+                            android:id="@+id/tv_business_region"
+                            style="@style/step1_edittext_style"
+                            android:layout_weight="1"
+                            android:drawableRight="@drawable/down"
+                            android:gravity="center_vertical"/>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/et_operate_detail_address"
+                        style="@style/step1_edittext_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/ll2"
+                        android:gravity="center_vertical"
+                        android:hint="请输入详细经营地址"/>
+
+                    <LinearLayout
+                        style="@style/step1_linearlayout_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/et_operate_detail_address"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:paddingRight="0dp">
+
+                        <TextView
+                            style="@style/step1_textview_style"
+                            android:text="邮编:"/>
+
+                        <EditText
+                            android:id="@+id/et_operate_zip_code"
+                            style="@style/step1_edittext_style"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                style="@style/step1_linearlayout_style">
+
+                <TextView
+                    style="@style/step1_textview_style"
+                    android:text="经营范围:"/>
+
+                <com.house.mine.view.LinesEditView
+                    android:id="@+id/le_office_range"
+                    app:public_classic_maxCount="300"
+                    app:public_classic_hintText="请输入经营范围(最多300字)"
+                    style="@style/step1_edittext_style"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <LinearLayout
+                android:id="@+id/ll_inspect_annually"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                style="@style/step1_linearlayout_style">
+
+                <TextView
+                    style="@style/step1_textview_style"
+                    android:text="年检情况:"/>
+
+                <com.house.mine.view.LinesEditView
+                    android:id="@+id/le_inspect_annually"
+                    app:public_classic_maxCount="300"
+                    app:public_classic_hintText="请输入年检情况(最多300字)"
+                    style="@style/step1_edittext_style"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider_inspect_annually"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <LinearLayout
+                android:id="@+id/ll_company_status"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                style="@style/step1_linearlayout_style">
+
+                <TextView
+                    style="@style/step1_textview_style"
+                    android:text="企业概况:"/>
+
+                <com.house.mine.view.LinesEditView
+                    android:id="@+id/le_company_status"
+                    app:public_classic_maxCount="300"
+                    app:public_classic_hintText="请输入企业概况(最多300字)"
+                    style="@style/step1_edittext_style"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider_company_status"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <LinearLayout
+                style="@style/step1_linearlayout_style">
+
+                <TextView
+                    style="@style/step1_textview_style"
+                    android:text="工商登记部门:"/>
+
+                <EditText
+                    android:id="@+id/et_business_registration_department"
+                    style="@style/step1_edittext_style"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <LinearLayout
+                style="@style/step1_linearlayout_style">
+
+                <TextView
+                    style="@style/step1_textview_style"
+                    android:text="工商登记时间:"/>
+
+                <TextView
+                    android:id="@+id/tv_regist_time"
+                    style="@style/step1_edittext_style"
+                    android:drawableRight="@drawable/calendar"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <LinearLayout
+                android:id="@+id/ll_sign_time"
+                style="@style/step1_linearlayout_style">
+
+                <TextView
+                    style="@style/step1_textview_style"
+                    android:text="批准从事日期:"/>
+
+                <TextView
+                    android:id="@+id/tv_sign_time"
+                    style="@style/step1_edittext_style"
+                    android:drawableRight="@drawable/calendar"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider_sign_time"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <LinearLayout
+                android:id="@+id/ll_agent"
+                style="@style/step1_linearlayout_style">
+
+                <TextView
+                    style="@style/step1_textview_style"
+                    android:text="代理人:"/>
+
+                <EditText
+                    android:id="@+id/et_agent"
+                    style="@style/step1_edittext_style"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider_agent"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <TextView
+                android:id="@+id/tv_next"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bt_search_drawable"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

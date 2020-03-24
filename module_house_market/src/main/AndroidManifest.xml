@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.house.market" >
+
+    <application>
+
+        <activity android:name=".HouseMarketActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

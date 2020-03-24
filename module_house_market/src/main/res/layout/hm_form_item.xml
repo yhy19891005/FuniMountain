@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_form_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        <!--单列-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <include layout="@layout/hm_vertical_line"/>
+
+            <!--时间-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_F66"
+                    android:text="时间"
+                    android:textStyle="bold"
+                    android:background="#FFF5F5F5"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="今日"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text=""
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="本月"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text=""
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="本年"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text=""
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+            </LinearLayout>
+
+            <include layout="@layout/hm_vertical_line"></include>
+            <!--类型-->
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="@dimen/type_house_width"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_F66"
+                    android:textStyle="bold"
+                    android:text="类型"
+                    android:background="#FFF5F5F5"
+                    android:minWidth="110dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="套数"
+                    android:background="@color/white"
+                    android:minWidth="110dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="面积"
+                    android:background="@color/white"
+                    android:minWidth="110dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="套数"
+                    android:background="@color/white"
+                    android:minWidth="110dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:background="@color/white"
+                    android:text="面积"
+                    android:minWidth="110dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="套数"
+                    android:background="@color/white"
+                    android:minWidth="110dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:background="@color/white"
+                    android:text="面积"
+                    android:minWidth="110dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+            </LinearLayout>
+
+            <include layout="@layout/hm_vertical_line"></include>
+
+            <!--商品房-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tv_type_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_F66"
+                    android:textStyle="bold"
+                    android:text="总计"
+                    android:background="#FFF5F5F5"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_shop_house_sale_num_of_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_shop_house_sale_area_of_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="98"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_shop_house_sale_num_of_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_shop_house_sale_area_of_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4321"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_shop_house_sale_num_of_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_shop_house_sale_area_of_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4321"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+            </LinearLayout>
+
+            <include layout="@layout/hm_vertical_line"></include>
+
+            <!--住宅-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_F66"
+                    android:textStyle="bold"
+                    android:text="住宅"
+                    android:background="#FFF5F5F5"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_family_house_sale_num_of_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_family_house_sale_area_of_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="98"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_family_house_sale_num_of_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_family_house_sale_area_of_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4321"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_family_house_sale_num_of_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_family_house_sale_area_of_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4321"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+            </LinearLayout>
+
+            <include layout="@layout/hm_vertical_line"></include>
+
+            <!--商业-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_F66"
+                    android:textStyle="bold"
+                    android:text="商业"
+                    android:background="#FFF5F5F5"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_business_sale_num_of_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_business_sale_area_of_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="98"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_business_sale_num_of_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_business_sale_area_of_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4321"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_business_sale_num_of_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_business_sale_area_of_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4321"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+            </LinearLayout>
+
+            <!--其他-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tv_type_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_F66"
+                    android:textStyle="bold"
+                    android:text="其他"
+                    android:background="#FFF5F5F5"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_other_sale_num_of_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_other_sale_area_of_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="98"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_other_sale_num_of_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_other_sale_area_of_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4321"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_other_sale_num_of_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+                <TextView
+                    android:id="@+id/tv_other_sale_area_of_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/dy_them_color_De0"
+                    android:text="4321"
+                    android:background="@color/white"
+                    android:minWidth="70dp"
+                    android:gravity="center"
+                    />
+                <include layout="@layout/hm_horizontal_line"></include>
+            </LinearLayout>
+
+            <include layout="@layout/hm_vertical_line"></include>
+
+            <include layout="@layout/hm_vertical_line"></include>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

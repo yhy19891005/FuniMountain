@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_reload"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.cunoraz.gifview.library.GifView
+            android:id="@+id/load_gif"
+            android:layout_width="@dimen/gif_view_width"
+            android:layout_height="@dimen/gif_view_width"
+            custom:gif="@drawable/loading" />
+
+        <ImageView
+            android:id="@+id/iv_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/reload_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/page_loading_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_5"
+            android:gravity="center_horizontal"
+            android:text="@string/loading_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14" />
+    </LinearLayout>
+
+</RelativeLayout>

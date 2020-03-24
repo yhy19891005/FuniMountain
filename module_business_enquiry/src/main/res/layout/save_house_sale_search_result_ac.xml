@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <include
+        layout="@layout/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:text="合同网签号"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_wqh"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        layout="@layout/line_layout" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:text="网签时间"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_wqtime"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        layout="@layout/line_layout" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:text="合同状态"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/line_layout" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:text="房屋地址"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_house_address"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        layout="@layout/line_layout" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:text="建筑面积"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        layout="@layout/line_layout" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:text="套内面积"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_inner_area"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        layout="@layout/line_layout" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:text="房屋用途"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_house_function"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/line_layout" />
+</LinearLayout>

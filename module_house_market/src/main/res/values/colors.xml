@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dy_them_color_blue">#FF008AFF</color>
+    <color name="dy_bt_select">#FF008AFF</color>
+    <color name="dy_bt_un_select">#FF008AFF</color>
+    <color name="dy_them_color_F99">#FF999999</color>
+    <color name="dy_them_color_F66">#FF666666</color>
+    <color name="dy_them_color_De0">#DE000000</color>
+    <color name="dy_FEE">#FFEEEEEE</color>
+    <color name="dy_color_f5">#FFF5F5F5</color>
+</resources>

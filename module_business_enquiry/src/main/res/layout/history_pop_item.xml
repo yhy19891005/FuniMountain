@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_item_root"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/click_normal_bg"
+        >
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@mipmap/be_icon_search"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_history_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是搜索记录"
+            android:textColor="@color/two_f4"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+    <TextView
+        android:background="@color/line_color"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="0.5dp" />
+    <TextView
+        android:id="@+id/tv_history_clear"
+        android:visibility="gone"
+        android:background="@drawable/click_normal_bg"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="清空历史记录"
+        android:gravity="center"
+        android:textColor="@color/dy_them_color_F66"
+        />
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.house.mine.view.ImgUploadItemView
+                android:id="@+id/uiv_linence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:img_type="营业执照"/>
+
+            <View
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <com.house.mine.view.ImgUploadItemView
+                android:id="@+id/uiv_orgcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:img_type="组织机构代码"/>
+
+            <View
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <com.house.mine.view.ImgUploadItemView
+                android:id="@+id/uiv_qualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:img_type="资质证书"/>
+
+            <View
+                android:id="@+id/divider_qualification"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <com.house.mine.view.ImgUploadItemView
+                android:id="@+id/uiv_legalpersonid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:img_type="法人身份证"/>
+
+            <View
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <com.house.mine.view.ImgUploadItemView
+                android:id="@+id/uiv_land_useright_certificate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:img_type="土地使用权证"/>
+
+            <View
+                android:id="@+id/divider_land_useright_certificate"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <com.house.mine.view.ImgUploadItemView
+                android:id="@+id/uiv_building_permit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:img_type="建设工程规划许可证"/>
+
+            <View
+                android:id="@+id/divider_building_permit"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <com.house.mine.view.ImgUploadItemView
+                android:id="@+id/uiv_land_useright_planning_permit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:img_type="土地使用权规划许可证"/>
+
+            <View
+                android:id="@+id/divider_land_useright_planning_permit"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <com.house.mine.view.ImgUploadItemView
+                android:id="@+id/uiv_construction_permit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:img_type="施工许可证"/>
+
+            <View
+                android:id="@+id/divider_construction_permit"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <com.house.mine.view.ImgUploadItemView
+                android:id="@+id/uiv_agent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:img_type="委托人"/>
+
+            <View
+                android:id="@+id/divider_agent"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#D8D8D8"/>
+
+            <com.house.mine.view.ImgUploadItemView
+                android:id="@+id/uiv_agent_idcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:img_type="委托人身份证"/>
+
+            <TextView
+                android:id="@+id/tv_next"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bt_search_drawable"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

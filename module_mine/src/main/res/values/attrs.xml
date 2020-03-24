@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="public_LinesEditView">
+        <attr name="public_classic_maxCount" format="integer"/>
+        <attr name="public_classic_ignoreCnOrEn" format="boolean"/>
+        <attr name="public_classic_hintText" format="string|reference"/>
+        <attr name="public_classic_hintTextColor" format="color|reference"/>
+        <attr name="public_classic_contentText" format="string|reference"/>
+        <attr name="public_classic_contentTextSize" format="dimension|reference"/>
+        <attr name="public_classic_contentTextColor" format="color|reference"/>
+        <attr name="public_classic_contentViewHeight" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ImgUploadItemView">
+        <attr name="img_type" format="string|reference"/>
+    </declare-styleable>
+</resources>

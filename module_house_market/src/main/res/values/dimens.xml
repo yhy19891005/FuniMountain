@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="dy_system_icon">28dp</dimen>
+    <dimen name="dy_tool_icon">32dp</dimen>
+    <dimen name="dy_sort_icon">48dp</dimen>
+    <dimen name="dy_indicative_icon">24dp</dimen>
+    <dimen name="dy_descriptive_icon">28dp</dimen>
+    <dimen name="dy_status_image">120dp</dimen>
+    <dimen name="type_house_width">60dp</dimen>
+</resources>

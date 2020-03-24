@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include
+        layout="@layout/normal_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include layout="@layout/line_layout"/>
+<FrameLayout
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        layout="@layout/smart_layout_rc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <yin.deng.dyutils.refresh.SmartRefreshLayout
+        android:visibility="gone"
+        android:id="@+id/smRf_search_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcView_search_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:overScrollMode="always"
+            android:scrollbars="none" />
+    </yin.deng.dyutils.refresh.SmartRefreshLayout>
+</FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/media_type"
+        android:text="从手机相册选取"
+        android:gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/public_bg_media_type"
+        android:padding="@dimen/dp_10"
+        android:textColor="#FF008AFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#9f9f9f" />
+
+    <TextView
+        android:id="@+id/photo_type"
+        android:text="拍摄"
+        android:gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/public_bg_photo_type"
+        android:padding="@dimen/dp_10"
+        android:textColor="#FF008AFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="取消"
+        android:id="@+id/cancel"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/public_bg_white"
+        android:padding="@dimen/dp_10"
+        android:textColor="#FF008AFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

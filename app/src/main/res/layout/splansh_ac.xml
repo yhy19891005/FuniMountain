@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:src="@mipmap/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <LinearLayout
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_marginBottom="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="房产资讯 一手掌握"
+                android:textColor="#de000000"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="东营住宅与房地产信息网"
+                android:textColor="#ff666666"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

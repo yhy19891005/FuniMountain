@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dy_color_f5"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_48"
+        android:gravity="center"
+        android:text="@string/business_enquiry"
+        android:textStyle="bold"
+        android:background="@color/white"
+        android:textColor="@color/color_title_text"
+        android:textSize="@dimen/text_17" />
+
+    <include layout="@layout/line_layout" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:overScrollMode="always"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="40dp"
+            >
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="172dp"
+       android:src="@mipmap/business_enquiry_banner"
+       android:scaleType="centerCrop"
+       />
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_bg"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            >
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/marker"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="楼盘查询"
+                android:textColor="#de000000"
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        <include layout="@layout/hm_horizontal_line"></include>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:minHeight="92dp">
+            <LinearLayout
+                android:id="@+id/ll_be_new_house"
+                style="@style/item_search_be"
+                >
+                <ImageView
+                    android:src="@mipmap/the_most_new_houses"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp" />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="新房楼盘"
+                    android:gravity="center_horizontal"
+                    android:textColor="#de000000"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="invisible"
+                style="@style/item_search_be"
+                >
+                <ImageView
+                    android:src="@mipmap/be_shop_house_search"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp" />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="新房楼盘"
+                    android:gravity="center_horizontal"
+                    android:textColor="#de000000"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="invisible"
+                style="@style/item_search_be"
+                >
+                <ImageView
+                    android:src="@mipmap/be_shop_house_search"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp" />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="新房楼盘"
+                    android:gravity="center_horizontal"
+                    android:textColor="#de000000"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--业务查询-->
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_bg"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            >
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/marker"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="业务查询"
+                android:textColor="#de000000"
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        <include layout="@layout/hm_horizontal_line"></include>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:minHeight="92dp"
+            >
+            <LinearLayout
+                android:id="@+id/ll_be_shop_house_search"
+                style="@style/item_search_be"
+                >
+                <ImageView
+                    android:src="@mipmap/be_shop_house_search"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp" />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/be_shop_houses_sale_search"
+                    android:textColor="#de000000"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_be_save_house_search"
+                style="@style/item_search_be"
+                >
+                <ImageView
+                    android:src="@mipmap/be_save_house_search"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp" />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/be_save_houses_sale_search"
+                    android:gravity="center"
+                    android:textColor="#de000000"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_be_re_sale_certify_search"
+                style="@style/item_search_be"
+                >
+                <ImageView
+                    android:src="@mipmap/be_re_sale_certify_search"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp" />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/be_re_sale_certify_search"
+                    android:gravity="center_horizontal"
+                    android:textColor="#de000000"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:minHeight="92dp">
+            <LinearLayout
+                android:id="@+id/ll_be_occu_main_part_search"
+                style="@style/item_search_be"
+                >
+                <ImageView
+                    android:src="@mipmap/be_occu_main_part_search"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp" />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/be_occu_main_part_search"
+                    android:gravity="center_horizontal"
+                    android:textColor="#de000000"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/item_search_be"
+                android:layout_height="wrap_content"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/be_shop_house_search" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="新房楼盘"
+                    android:textColor="#de000000"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/item_search_be"
+                android:visibility="invisible"
+                >
+                <ImageView
+                    android:src="@mipmap/be_shop_house_search"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp" />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="新房楼盘"
+                    android:textColor="#de000000"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

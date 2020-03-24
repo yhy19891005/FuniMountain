@@ -1,0 +1,48 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.house.mine">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".activity.InfoDeclareStepOneAc"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.InfoDeclareStepTwoAc"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:name=".activity.InfoDeclareStepThreeWithCreditCodeAc"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:name=".activity.InfoDeclareStepThreeWithoutCreditCodeAc"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.InfoDeclareStepFourAc"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.InfoDeclareStepFiveAc"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.InfoDeclareStepSixAc"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.ShowBigImgAc"
+            android:theme="@android:style/Theme.Translucent"
+            android:screenOrientation="portrait"/>
+    </application>
+</manifest>

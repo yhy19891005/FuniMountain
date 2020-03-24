@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+
+def config = rootProject.ext.androidConfig
+
+android {
+    compileSdkVersion config.compileSdkVersion
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            // 显式声明支持注解
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+        //dialog框架需要添加这两句
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
+    api project(path: ':myutils')
+    api project(path: ':funi_okhttp')
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    //阴影库
+    implementation 'com.lijiankun24:shadowlayout:1.1.0'
+}

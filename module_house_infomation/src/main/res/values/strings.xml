@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="hi_house_information">房产资讯</string>
+    <string name="hi_notice">通知公告</string>
+    <string name="hi_policy">政策法规</string>
+    <string name="hi_good_faith">诚信榜</string>
+    <string name="hi_work_guide">办事指南</string>
+
+</resources>

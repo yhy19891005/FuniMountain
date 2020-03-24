@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_et_root"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_bar_bg"
+            android:padding="6dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/be_icon_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp"
+                android:textColor="@color/dy_them_color_De0"
+                android:hint="输入项目名称进行搜索"
+                android:textColorHint="@color/dy_them_color_F99"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:inputType="text"
+                />
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:visibility="gone"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:src="@mipmap/be_delete_search"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

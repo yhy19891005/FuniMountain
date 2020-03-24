@@ -1,0 +1,11 @@
+<resources>
+    <string name="hm_house_market">楼市行情</string>
+    <string name="hm_shop_house_details">商品房交易行情</string>
+    <string name="hm_save_house_details">存量房交易行情</string>
+
+    <string name="be_most_new_houses">新房楼盘</string>
+    <string name="be_shop_houses_sale_search">商品房备案合同查询</string>
+    <string name="be_save_houses_sale_search">存量房备案合同查询</string>
+    <string name="be_re_sale_certify_search">预售证查询</string>
+    <string name="be_occu_main_part_search">从业主体查询</string>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">东营住房</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="house_information">房产资讯</string>
+    <string name="house_market">楼市行情</string>
+    <string name="business_enquiry">业务查询</string>
+    <string name="mine">我的</string>
+    <string name="exit">再按一次，退出程序。</string>
+</resources>

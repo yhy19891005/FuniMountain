@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.business.enquiry" >
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:usesCleartextTraffic="true"
+        >
+        <activity
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:name="com.house.enquiry.ui.be_most_new_house_building_search.MostNewHouseBuildingSearchAc"/>
+        <activity
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:name="com.house.enquiry.ui.be_shop_house_sale_search.ShopHouseSaleSearchAc"/>
+        <activity
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:name="com.house.enquiry.ui.be_shop_house_sale_search.ShopHouseSaleSearchResultAc"/>
+        <activity
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:name="com.house.enquiry.ui.be_save_house_sale_search.SaveHouseSaleSearchAc"/>
+        <activity
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:name="com.house.enquiry.ui.be_save_house_sale_search.SaveHouseSaleSearchResultAc"/>
+        <activity
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:name="com.house.enquiry.ui.be_re_certify_search.BeReCertifySearchAc"/>
+        <activity
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:name="com.house.enquiry.ui.be_occu_main_part.BeOccuMainPartOutAc"/>
+        <activity
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:name="com.house.enquiry.ui.be_occu_main_part.BeOccuMainPartSearchAc"/>
+    </application>
+</manifest>

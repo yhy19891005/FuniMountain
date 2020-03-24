@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5F5"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        style="@style/step1_linearlayout_style">
+
+        <TextView
+            style="@style/step1_textview_style"
+            android:text="企业名称:"/>
+
+        <EditText
+            android:id="@+id/et_company_name"
+            android:hint="请输入企业名称"
+            style="@style/step1_edittext_style"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#D8D8D8"/>
+
+    <LinearLayout
+        style="@style/step1_linearlayout_style">
+
+        <TextView
+            style="@style/step1_textview_style"
+            android:text="母公司:"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_has"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:button="@drawable/radio_btn_style"
+                android:checked="true"
+                android:text="有"
+                android:textColor="@color/black"/>
+
+            <RadioButton
+                android:id="@+id/radio_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:button="@drawable/radio_btn_style"
+                android:text="无"
+                android:textColor="@color/black"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_mother_company_name"
+            android:layout_weight="1.5"
+            android:hint="请输入母公司名称"
+            style="@style/step1_edittext_style"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#D8D8D8"/>
+
+    <LinearLayout
+        style="@style/step1_linearlayout_style">
+
+        <TextView
+            style="@style/step1_textview_style"
+            android:text="企业类型:"/>
+
+        <TextView
+            android:text="开发企业"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_business_type"
+            style="@style/step1_edittext_style"
+            android:drawableRight="@drawable/down"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#D8D8D8"/>
+
+    <LinearLayout
+        style="@style/step1_linearlayout_style">
+
+        <TextView
+            style="@style/step1_textview_style"
+            android:text="公司类型:"/>
+
+        <TextView
+            android:text="有限责任公司"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_company_type"
+            style="@style/step1_edittext_style"
+            android:drawableRight="@drawable/down"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#D8D8D8"/>
+
+    <LinearLayout
+        style="@style/step1_linearlayout_style">
+
+        <TextView
+            style="@style/step1_textview_style"
+            android:text="企业联系电话:"/>
+
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/et_company_contact_tel"
+            android:hint="请输入座机号或手机号码"
+            style="@style/step1_edittext_style"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#D8D8D8"/>
+
+    <LinearLayout
+        style="@style/step1_linearlayout_style">
+
+        <TextView
+            style="@style/step1_textview_style"
+            android:text="投诉电话:"/>
+
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/et_company_complaint_tel"
+            android:hint="请输入座机号或手机号码"
+            style="@style/step1_edittext_style"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bt_search_drawable"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+</LinearLayout>

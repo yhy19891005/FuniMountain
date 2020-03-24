@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#FFF5F5F5"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:background="@drawable/click_normal_bg"
+    android:id="@+id/occ_ll_item_root"
+    android:layout_marginBottom="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingRight="12dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/occ_tv_house_name"
+                android:layout_width="209dp"
+                android:layout_height="24dp"
+                android:text="芜湖铭宇房地产经纪有限公司"
+                android:textColor="#de000000"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                />
+            <TextView
+                android:id="@+id/occ_tv_house_place"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="芜湖市镜湖区联盛国际商业广场2#楼1707"
+                android:textColor="#99000000"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/occ_tv_house_type"
+            android:layout_marginTop="4dp"
+            android:layout_width="86dp"
+            android:layout_height="20dp"
+            android:text="民营企业"
+            android:gravity="center"
+            android:textColor="#ff008aff"
+            android:textSize="14sp"
+            android:background="#1A008AFF"
+            />
+    </LinearLayout>
+    <include layout="@layout/line_layout"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网签状态"
+            android:textColor="#de000000"
+            android:textSize="14sp"
+            android:layout_marginRight="8dp"
+            />
+        <TextView
+            android:id="@+id/occ_tv_sign_status"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正常"
+            android:textColor="#ff666666"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <!--<include layout="@layout/line_layout"></include>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        >
+        <TextView
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="挂牌房源"
+            android:textColor="#de000000"
+            android:textSize="14sp"
+            android:layout_marginRight="8dp"
+            />
+        <TextView
+            android:id="@+id/occ_tv_house_count"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90套"
+            android:textColor="#ff666666"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

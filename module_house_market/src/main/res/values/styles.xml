@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="dy_title_style">
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="dy_title_sub_style">
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="dy_main_text">
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="dy_main_sub_text">
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="dy_read_me_text">
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="dy_tab_text">
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="item_search_be">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+</resources>
